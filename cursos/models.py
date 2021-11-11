@@ -14,6 +14,7 @@ class Course(Base):
     title = models.CharField(max_length=255)
     course_author = models.CharField(max_length=255)
     url = models.URLField(unique=True)
+    free = models.BooleanField(default=True)
 
     class Meta:
         verbose_name = 'Curso'
